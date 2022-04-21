@@ -1,0 +1,14 @@
+class Config:
+    
+    allowedChargingModes = {
+            0:"immediateCharging",
+            1:"surplusCharging",
+            2:"noCharging"
+            }
+    pVManufacturer = ["E3DC","Fronius"]
+    chargingModeEndpoint = "chargingMode"
+    socStartEndpoint = "socStart"
+    socStopEndpoint = "socStop"
+    pVManufacturerEndpoint = "pVManufacturer"
+    endpointsChargingApp = [chargingModeEndpoint,"surplusTimeOn","surplusTimeOff",socStartEndpoint,socStopEndpoint]
+    endpointsFacility = [pVManufacturerEndpoint]
